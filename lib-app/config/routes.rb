@@ -9,5 +9,9 @@ Rails.application.routes.draw do
 
   get '/login' => 'sessions#new'
   post '/sessions' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
 
+  get '/libraries' => 'libraries#index'
+  get '/libraries/new' => 'libraries#new', as: 'new_library'
+  post '/libraries' => 'libraries#create'
 end
