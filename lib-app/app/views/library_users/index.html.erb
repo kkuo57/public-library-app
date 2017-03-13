@@ -1,0 +1,6 @@
+<h1><%= @user.first_name %> <%= @user.last_name %>'s Library Memberships</h1>
+
+<% @libraries.each do |library| %>
+  <h3><%= library.name %></h3>
+  <br>
+<% end %>
